@@ -14,6 +14,7 @@
 <link rel="stylesheet" type="text/css" href="<?bloginfo('template_url')?>/css/ie7.css" />
 <![endif]-->
 <link rel="stylesheet" type="text/css" href="<?bloginfo('stylesheet_url')?>" />
+<script src="<?=get_template_directory_uri()?>/js/jquery-1.10.2.min.js" type="text/javascript"></script>
 <?php wp_head(); ?>
 </head>
 

@@ -1,12 +1,16 @@
+<?php
+if(isset($_GET['tag'])){
+	query_posts(array('tag_slug__and'=>explode(',',$_GET['tag'])));
+}
+?>
 <?get_header()?>
 <section id="article">
 	<div class="wrapper">
 		<article class="column column-4-3">
 <?php while ( have_posts() ) : the_post(); ?>
-			<?the_breadcrumb()?>
 			<br><br>
-			<h1><?the_title()?></h1>
-			<?the_content()?>
+			<a href="<?the_permalink()?>"><h1><?the_title()?></h1></a>
+			<?  the_content('a',true)?>
 <?php endwhile; // end of the loop. ?>
 		</article>
 		<aside class="column column-4-1">
