@@ -14,7 +14,7 @@
 </head>
 
 <body <?php body_class(); ?>>
-	<header class="wrapper">
+	<header>
 		<nav class="navbar navbar-default" role="navigation">
 			<!-- Brand and toggle get grouped for better mobile display -->
 			<div class="navbar-header">
@@ -39,3 +39,4 @@
 			</div><!-- /.navbar-collapse -->
 		</nav>
 	</header>
+	<div class="container row-fluid">

@@ -4,16 +4,40 @@
 	Version: 0.1
 */
 
+/*全局标签和类*/
+body{
+	background-color: #F5F2EF;
+}
+
 body, h1, h2, h3, h4, h5, h6, .h1, .h2, .h3, .h4, .h5, .h6{
 	font-family: arial,"Hiragino Sans GB","Microsoft Yahei",sans-serif;
 }
 
-.wrapper{
-	width: 90%;
-	max-width: 1200px;
-	margin: auto;
+.delimiter {
+	background: url('images/delimiter.png') center no-repeat;
+	height: 64px;
 }
 
+/*页头页尾*/
+
+body>.container{
+	width: 90%;
+	max-width: 1200px;
+	padding: 0;
+	margin: auto;
+	background-color: #FFF;
+	box-shadow: 2px 2px 5px #CCC;
+	border-radius: 4px;
+}
+
+body>footer{
+	margin-top: 20px;
+	padding: 20px 50px;
+	text-align: right;
+	box-shadow: 0 -2px 10px #CCC;
+}
+
+/*首页*/
 .headline{
 	height: 700px;
 	padding: 100px 12.5%;
@@ -42,7 +66,7 @@ body, h1, h2, h3, h4, h5, h6, .h1, .h2, .h3, .h4, .h5, .h6{
 
 .headline .article-list a, .headline .article-list h3{
 	font-size: 1em;
-	color: #6F7E9E;
+	color: #95A3BE;
 	margin: 0;
 }
 
@@ -92,7 +116,23 @@ body, h1, h2, h3, h4, h5, h6, .h1, .h2, .h3, .h4, .h5, .h6{
 	padding-left: 54%;
 }
 
-.delimiter {
-	background: url('images/delimiter.png') center no-repeat;
-	height: 64px;
+/*列表页*/
+.archive-title{
+	border-bottom: 1px #CCC solid;
+}
+
+.archive article{
+	margin-bottom: 20px;
+}
+
+.archive article{
+	background: url('images/article-background.png') bottom center;
+	padding: 20px 60px 60px;
+}
+
+/*文章页*/
+.single p{
+	font-size: 16px;
+	line-height: 1.7;
+	margin-bottom: 1em;
 }
