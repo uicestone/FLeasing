@@ -15,7 +15,7 @@ $title_posts = get_posts(array('tag'=>'标题')); $title_post=array_pop($title_p
 		<?php } ?>
 	</ul>
 
-	<ul class="article-list pull-right">
+	<ul class="article-list pull-left">
 		<?php foreach(get_posts(array('tag'=>'头条','posts_per_page'=>3,'paged'=>2)) as $headline_post){ ?>
 		<li><a href="<?php echo get_permalink($point->ID); ?>"><h3><?php echo $headline_post->post_title; ?></h3></a></li>
 		<?php } ?>

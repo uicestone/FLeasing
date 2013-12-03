@@ -4,6 +4,8 @@
 <head>
 <meta charset="<?php bloginfo( 'charset' ); ?>" />
 <meta name="viewport" content="width=device-width" />
+<meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1" />
+<meta name="renderer" content="webkit" />
 <title><?php bloginfo('name'); ?></title>
 <link rel="pingback" href="<?php bloginfo( 'pingback_url' ); ?>" />
 <?php // Loads HTML5 JavaScript file to add support for HTML5 elements in older IE versions. ?>

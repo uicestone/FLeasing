@@ -60,7 +60,8 @@ body>footer{
 .headline .article-list{
 	margin-top: 50px;
 	color: #A0BCDA;
-	width: 450px;
+	width: 45%;
+	max-width: 450px;
 	line-height: 2;
 }
 
@@ -72,7 +73,7 @@ body>footer{
 
 .feature{
 	height: 400px;
-	padding: 0 50px;
+	padding: 0 4.17%;
 	background: no-repeat;
 }
 
@@ -82,8 +83,12 @@ body>footer{
 }
 
 .feature h2, .feature summary{
-	width: 500px;
+	width: 100%;
 	white-space: pre-wrap;
+}
+
+.feature h2, .feature summary, .feature .article-list{
+	background: rgba(255, 255, 255, 0.9);
 }
 
 .feature summary{
@@ -109,6 +114,7 @@ body>footer{
 
 .feature.even{
 	background-position: right top;
+	padding-right: 54%;
 }
 
 .feature.odd{
@@ -135,4 +141,49 @@ body>footer{
 	font-size: 16px;
 	line-height: 1.7;
 	margin-bottom: 1em;
+}
+
+@media (max-width: 768px) {
+	.delimiter{
+		display: none;
+	}
+	
+	.headline .article-list{
+		background: rgba(41,63,112,0.7);
+		width: 100%;
+		margin: 0;
+	}
+	
+	.home>.container, .archive>.container{
+		background: none;
+	}
+	
+	body>section{
+		box-shadow: 2px 2px 5px #333;
+	}
+	
+	.feature{
+		background: #FFF !important;
+		height: auto;
+		padding: 4.17%;
+		margin-top: 10px;
+		box-shadow: 2px 4px 7px #333;
+		border-radius: 4px;
+		background: #FFF;
+	}
+	
+	.archive article{
+		box-shadow: 2px 4px 7px #333;
+		border-radius: 4px;
+		background: #FFF;
+	}
+	
+	.feature.odd{
+		padding-left:4.17%;
+	}
+	
+	.feature.even{
+		padding-right: 4.17%;
+	}
+	
 }
