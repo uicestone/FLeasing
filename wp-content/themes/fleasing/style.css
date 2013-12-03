@@ -1,0 +1,98 @@
+/*
+	Theme Name: Financial Leasing
+	Author: 陆秋石
+	Version: 0.1
+*/
+
+body, h1, h2, h3, h4, h5, h6, .h1, .h2, .h3, .h4, .h5, .h6{
+	font-family: arial,"Hiragino Sans GB","Microsoft Yahei",sans-serif;
+}
+
+.wrapper{
+	width: 90%;
+	max-width: 1200px;
+	margin: auto;
+}
+
+.headline{
+	height: 700px;
+	padding: 100px 12.5%;
+	background: no-repeat bottom center #293F70;
+	color: #FFF;
+	border-radius: 4px;
+}
+
+.headline h1{
+	text-align: center;
+	font-size: 3em;
+}
+
+.headline summary{
+	font-size: 1.2em;
+	text-align: center;
+	color: #D5D5D5;
+}
+
+.headline .article-list{
+	margin-top: 50px;
+	color: #A0BCDA;
+	width: 450px;
+	line-height: 2;
+}
+
+.headline .article-list a, .headline .article-list h3{
+	font-size: 1em;
+	color: #6F7E9E;
+	margin: 0;
+}
+
+.feature{
+	height: 400px;
+	padding: 0 50px;
+	background: no-repeat;
+}
+
+.feature h2{
+	color: #333;
+	font-size: 2.5em;
+}
+
+.feature h2, .feature summary{
+	width: 500px;
+	white-space: pre-wrap;
+}
+
+.feature summary{
+	line-height: 1;
+	color: #656D78;
+	border-bottom: #CCC solid 1px;
+	padding-bottom: 10px;
+}
+
+.feature .article-list{
+	line-height: 1.5;
+	margin-top: 10px;
+}
+
+.feature .article-list h4{
+	font-size: 1em;
+	font-weight: normal;
+}
+
+.feature .article-list a{
+	color: #949CA7;
+}
+
+.feature.even{
+	background-position: right top;
+}
+
+.feature.odd{
+	background-position: left top;
+	padding-left: 54%;
+}
+
+.delimiter {
+	background: url('images/delimiter.png') center no-repeat;
+	height: 64px;
+}
