@@ -2,6 +2,8 @@
 register_nav_menu('primary', '主导航');
 register_nav_menu('foot', '底部导航');
 
+add_theme_support( 'post-thumbnails' );
+
 add_image_size( 'headline-background', 1200, 400, true );
 add_image_size( 'home-features', 600, 300, true );
 
@@ -47,8 +49,6 @@ function additional_active_item_classes($classes = array(), $menu_item = false){
 function paginator() {
 	global $wp_query;
 
-	$paginator = '<div class="pagination pagination-centered">';
-
 	$paginator .= paginate_links(array(
 			'base' => str_replace( 99999, '%#%', esc_url( get_pagenum_link( 99999 ) ) ),
 			'format'=>'/%n%/page/%#%',
@@ -56,8 +56,8 @@ function paginator() {
 			'total' => $wp_query->max_num_pages,
 			'type' => 'list'
 	));
-
-	$paginator .= '</div>';
+	
+	$paginator = str_replace('page-numbers', 'pagination', $paginator);
 
 	return $paginator;
 }
