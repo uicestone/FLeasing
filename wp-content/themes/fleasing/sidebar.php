@@ -1,13 +1,13 @@
 <aside class="col-md-3">
 	
-	<div class="container">
+	<div>
 		<a href="http://www.lawyerstars.com/team/lawyers/" target="_blank"><h3>
 			律师团队
 			<span class="glyphicon glyphicon-new-window"></span>
 		</h3></a>
 	</div>
 	
-	<div class="container">
+	<div>
 		<h3>星瀚律师事务所</h3>
 		<img width="140" height="130" src="http://freetrade.lawyerstars.com/wp-content/themes/fta/img/qrcode.jpg" />
 		<span>微信公众平台</span>
