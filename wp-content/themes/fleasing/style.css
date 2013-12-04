@@ -143,6 +143,14 @@ body>footer{
 	border-bottom: 1px #CCC solid;
 }
 
+.archive section{
+	padding: 0;
+}
+
+.archive .archive-header{
+	padding: 0 15px;
+}
+
 .archive article{
 	margin-bottom: 20px;
 }
