@@ -33,7 +33,7 @@ $title_posts = get_posts(array('tag'=>'标题')); $title_post=array_pop($title_p
 
 	<ul class="article-list list-unstyled">
 		<?php foreach(get_posts(array('cat'=>get_the_category($point->ID)[0]->term_id, 'post__not_in'=>array($point->ID))) as $related_post){?>
-		<li><a href="<?php echo get_permalink($point->ID); ?>"><h4><?php echo $related_post->post_title; ?><h4></a></li>
+		<li><a href="<?php echo get_permalink($related_post->ID); ?>"><h4><?php echo get_the_title($related_post->ID); ?><h4></a></li>
 		<?php } ?>
 	</ul>
 </section>
