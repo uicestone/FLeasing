@@ -18,10 +18,10 @@
 define('DB_NAME', 'fleasing');
 
 /** MySQL数据库用户名 */
-define('DB_USER', 'root');
+define('DB_USER', 'fleasing');
 
 /** MySQL数据库密码 */
-define('DB_PASSWORD', '');
+define('DB_PASSWORD', '6QdZh6HSm4aQ9BdE');
 
 /** MySQL主机 */
 define('DB_HOST', 'localhost');
